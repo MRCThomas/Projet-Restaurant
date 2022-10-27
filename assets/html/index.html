@@ -5,13 +5,406 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="/assets/img/logo_BonAppetit_3.png" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/js/script.js">
+    <script src="/assets/js/script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Bon Appétit !</title>
 </head>
 
 <body>
-    <h1>
-        hello
-    </h1>
+    <!-- HEADER avec la barre de navigation, burger menu, logo ... -->
+    <header>
+        <div id="burger-logo">
+            <div id="logo">
+                <img src="/assets/img/logo_BonAppetit_3.png" alt="logo-bon-appetit">
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="#menu-card">La Carte</a></li>
+                        <li><a href="#slideshow">Le Restaurant</a></li>
+                        <li><a href="#banner">Réservartion</a></li>
+                        <li><a href="#events">Événements</a></li>
+                        <li><a href="#wrapper">Avis</a></li>
+                        <li><a href="#maps">Localisation</a></li>
+                        <li><a href="#footer">Contacts</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div id="burger">
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- SECTION image présentation - texte "Restaurant gastronomique" -->
+    <section id="img-container">
+        <div id="plat">
+            <img src="/assets/img/ressources/cover_dark.jpg" alt="">
+        </div>
+        <div id="text-img">
+            <h1>Restaurant Gastronomique</h1>
+        </div>
+    </section>
+    <!-- =============== SECTION CARTE PLATS ============ -->
+    <section id="menu-card">
+        <div id="text-card">
+            <h2>La Carte</h2>
+            <p>de la semaine</p>
+        </div>
+        <div id="card">
+            <div class="card-burger">
+                <img src="/assets/img/ressources/food_4_dark.jpg" alt="burger" style="width:100%">
+                <div class="container-burger">
+                    <h4><b>Le Red Burger Boucher</b></h4>
+                    <p>Pain brioché, oignons rouge confits,</p>
+                    <p> Pièce bouchère, salade, sauce maison </p>
+                </div>
+            </div>
+            <div class="card-butcher">
+                <img src="/assets/img/ressources/food_1_dark.jpg" alt="butcher" style="width:100%">
+                <div class="container-butcher">
+                    <h4><b>le Pavé Boucher</b></h4>
+                    <p>Pavé de boeuf sur son lit de légumes </p>
+                </div>
+            </div>
+            <div class="card-soft">
+                <img src="/assets/img/ressources/food_11_dark.jpg" alt="soft" style="width:100%">
+                <div class="container-soft">
+                    <h4><b>le Soft</b></h4>
+                    <p>Quenelles, amandes effilées , sauce maison</p>
+                </div>
+            </div>
+            <div class="card-langoustes">
+                <img src="/assets/img/ressources/food_5_dark.jpg" alt="langoustes" style="width:100%">
+                <div class="container-langoustes">
+                    <h4><b>la Baignade des Langoustes</b></h4>
+                    <p>Langoustes de méditerrané, filet de Cabillaud, tomates cerise </p>
+                </div>
+            </div>
+            <div class="card-tataki">
+                <img src="/assets/img/ressources/food_10_dark.jpg" alt="tataki" style="width:100%">
+                <div class="container-tataki">
+                    <h4><b>le Tataki de Thon</b></h4>
+                    <p>Thon rouge fumé, assortiment d'herbes, citron vert et la sauce fumé maison</p>
+                </div>
+            </div>
+            <div class="card-beef">
+                <img src="/assets/img/ressources/food_7_dark.jpg" alt="beef" style="width:100%">
+                <div class="container-beef">
+                    <h4><b>le Mollet de Boeuf</b></h4>
+                    <p>Pièce bouchère, oeuf mollet, salade de tomates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Création du chef BOUILLON !! -->
+    <section id="slideshow">
+        <div class=slideshow>
+            <input name="slideshow" id=slide_img1 type="radio" checked>
+            <input name="slideshow" id=slide_img2 type="radio">
+            <input name="slideshow" id=slide_img3 type="radio">
+            <input name="slideshow" id=slide_img4 type="radio">
+            <div class="cadre-ratio">
+                <ul>
+                    <li class=img1>
+                        <img src="/assets/img/ressources/venue_4_dark.jpg" alt>
+                    </li>
+                    <li class=img2>
+                        <img src="/assets/img/ressources/venue_3_dark.jpg" alt>
+                    </li>
+                    <li class=img3>
+                        <img src="/assets/img/ressources/venue_2_dark.jpg" alt>
+                    </li>
+                    <li class=img4>
+                        <img src="/assets/img/ressources/venue_1_dark.jpg" alt>
+                    </li>
+                </ul>
+            </div>
+            <div class=precedent>
+                <label class=img1 for=slide_img1></label>
+                <label class=img2 for=slide_img2></label>
+                <label class=img3 for=slide_img3></label>
+                <label class=img4 for=slide_img4></label>
+            </div>
+            <div class=suivant>
+                <label class=img1 for=slide_img1></label>
+                <label class=img2 for=slide_img2></label>
+                <label class=img3 for=slide_img3></label>
+                <label class=img4 for=slide_img4></label>
+            </div>
+            <div class=puces>
+                <label class="img1" for=slide_img1>
+                    <span class=actif_puces></span>
+                </label>
+                <label class="img2" for=slide_img2>
+                    <span class=actif_puces></span>
+                </label>
+                <label class="img3" for=slide_img3>
+                    <span class=actif_puces></span>
+                </label>
+                <label class="img4" for=slide_img4>
+                    <span class=actif_puces></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <!-- FORMULAIRE DE RÉSERVATION -->
+    <section id="banner">
+        <div class="card-container">
+            <div class="card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class="form-row">
+                        <select name="days">
+                            <option value="day-select">Jour</option>
+                            <option value="sunday">Lundi</option>
+                            <option value="monday">Mardi</option>
+                            <option value="tuesday">Mercredi</option>
+                            <option value="wednesday">Jeudi</option>
+                            <option value="thursday">Vendredi</option>
+                            <option value="friday">Samedi</option>
+                        </select>
+
+                        <select name="hours">
+                            <option value="hour-select">Heure</option>
+                            <option value="10">11: 30</option>
+                            <option value="10">12: 30</option>
+                            <option value="10">19: 30</option>
+                            <option value="10">21: 30</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" placeholder="Nom, Prénom">
+                        <input type="text" placeholder="N° tel.">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="number" placeholder="Nb. Personne?" min="1" max="6">
+                        <input type="submit" value="RÉSERVER">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ======= Events Section ======= -->
+    <section id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos événements</h2>
+            </div>
+            <div class="event1">
+                <div class="img">
+                    <img src="../img/ressources/event_1_dark.jpg" alt="">
+                </div>
+                <h3>Dîner au chandelles</h3>
+                <div class="price">
+                    <p><span>300 €</span></p>
+                </div>
+                <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore
+                    magna aliqua.
+                </p>
+            </div>
+
+            <div class="event2">
+                <!-- Start testimonial item -->
+                <div class="img">
+                    <img src="../img/ressources/event_2_dark.jpg" alt="">
+                </div>
+                <h3>Concert privé</h3>
+                <div class="price">
+                    <p><span>500 €</span></p>
+                </div>
+                <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore
+                    magna aliqua.
+                </p>
+            </div>
+            <!-- End testimonial item -->
+            <div class="event3">
+                <div class="img">
+                    <img src="../img/ressources/event_3_dark.jpg" alt="">
+                </div>
+                <h3>Réunion entre amis</h3>
+                <div class="price">
+                    <p><span>100 €</span></p>
+                </div>
+                <p class="fst-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore
+                    magna aliqua.
+                </p>
+            </div>
+        </div>
+        <!-- End testimonial item -->
+    </section>
+    <!-- End Events Section -->
+
+    <!-- ========= AVIS ======== -->
+    <div id="wrapper">
+        <div class="box">
+            <i class="fas fa-quote-left quote"></i>
+            <p>Un très bon moment dans un lieu simple, propre et convivial. Les mets sont fins et goûteux. Nous
+                avons
+                grandement apprécié le lieu. Et cerise sur le gâteau, nous avons croisé le chef en partant, une
+                belle
+                surprise !!</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Shana F.</div>
+                    <div class="job">28 / 10 / 2022 </div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="/assets/img/testimonial_1_dark.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-quote-left quote"></i>
+            <p>Le dîner était juste PARFAIT.</p>
+            <br>
+            <p> Le service très agréable avec une équipe au top, les plats sont d’une subtilités et d’une
+                finesses
+                incomparables.</p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Clara V.</div>
+                    <div class="job">28 / 10 / 2022</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="/assets/img/testimonial_2_dark.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-quote-left  quote"></i>
+            <p>Un moment incroyable</p>
+            <br>
+            <p>Le lieu est étourdissant, l’équipe est réactive, sympathique et professionnelle. Juste WHOAW ! 😀
+            </p>
+            <div class="content">
+                <div class="info">
+                    <div class="name">Julie D.</div>
+                    <div class="job">28 / 10 / 2022</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="/assets/img/testimonial_3_dark.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= FIN AVIS ============ -->
+    <!-- ========= Google maps ======== -->
+    <section id="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.4685895315024!2d2.299287015572316!3d49.890005379401956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e78446501e03cb%3A0xd90c13e3b01c0596!2s70%20Rue%20des%20Jacobins%2C%2080000%20Amiens!5e0!3m2!1sfr!2sfr!4v1666859755430!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-info">
+                            <div>
+                                <h3>Nos Horaires</h3>
+                                <p>
+                                    Lundi-Samedi <br />11:30-14:30 <br />
+                                    18:30-23:30
+                                    <br />Dimanche <br />fermé <br /><br />
+                                </p>
+                            </div>
+                            <div class="social-links mt-3">
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 footer-info2">
+                        <div>
+                            <h3>A Propos</h3>
+                            <p>
+                                Le restaurant Bon Appetit vous attend à Amiens, 70 rue des
+                                Jacobins, 80000
+                                <br />✆ 0304050607
+                                <br />
+                                mail@mail.com <br /><br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mention">
+                        <div class="copyright">
+                            <p>Mentions Légales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>Bon Appetit</span></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 </body>
 
 </html>
