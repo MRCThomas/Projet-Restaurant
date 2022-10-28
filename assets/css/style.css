@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 #burger-logo {
@@ -19,7 +20,7 @@
   top: 0;
   width: 100%;
   background-color: white;
-  z-index: 1000;
+  z-index: 1;
 }
 
 #burger-logo #logo img {
@@ -84,8 +85,40 @@
   margin: 6px 0;
 }
 
+@media screen and (min-width: 968px){
+  #burger{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu a{
+    font-size: 18px;
+  }
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 9vh;
+  }
+  .sidenav, a{
+    background-color: white;
+    display: inline;
+    right: 280px;
+    position: relative;
+    padding: 0;
+    transition: none;
+  }
+  #closeBtn{
+    display: none;
+  }
+} 
+
 /* <!-- SECTION image présentation - texte "Restaurant gastronomique" --> */
 #img-container {
+  margin-top: 5em;
   position: relative;
   text-align: center;
   color: rgb(255, 255, 255);
@@ -688,7 +721,6 @@ form input[type=submit]:hover {
 /* FOOTER */
 #footer {
   background: #FFF8B9;
-  margin-top: 4em;
   padding: 0 0 30px 0;
   color: black;
   font-size: 14px;
@@ -704,7 +736,6 @@ form input[type=submit]:hover {
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
 }
-
 #footer .footer-top .footer-info2 {
   margin-bottom: 30px;
 }
@@ -723,8 +754,7 @@ form input[type=submit]:hover {
   align-items: center;
   text-align: center;
 }
-
-#footer .footer-top .footer-info2 h3 {
+#footer .footer-top .footer-info2 h3{
   font-size: 3.5em;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
@@ -749,8 +779,7 @@ form input[type=submit]:hover {
   color: black;
   text-align: center;
 }
-
-#footer .footer-top .footer-info2 p {
+#footer .footer-top .footer-info2 p{
   font-size: 32px;
   line-height: 34px;
   margin-bottom: 0;
@@ -771,12 +800,11 @@ form input[type=submit]:hover {
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 4%;
-  height: 4%;
+  width: 7%;
+  height: 7%;
   transition: 0.3s;
 }
-
-#footer .social-links {
+#footer .social-links{
   display: flex;
   justify-content: center;
   align-items: center;
